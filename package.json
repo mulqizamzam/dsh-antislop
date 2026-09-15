@@ -1,0 +1,37 @@
+{
+  "name": "antislop",
+  "version": "1.0.0",
+  "description": "Anti-slop filter for AI coding agents: stop generic UI, copy, and code comments. Load as a filter, audit before shipping.",
+  "bin": {
+    "antislop": "bin/antislop.js"
+  },
+  "files": [
+    "antislop.md",
+    "skills",
+    "bin",
+    "install",
+    "plugins",
+    "scripts",
+    "audit",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "ai",
+    "slop",
+    "filter",
+    "ui",
+    "copywriting",
+    "code-comments",
+    "anti-slop",
+    "llm",
+    "agents"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=14"
+  },
+  "scripts": {
+    "audit": "node bin/antislop.js audit ."
+  }
+}

@@ -1,0 +1,3 @@
+# antislop: load the anti-slop filter every session
+rules:
+  - ./antislop.md
