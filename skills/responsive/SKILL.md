@@ -1,4 +1,8 @@
-# antislop-responsive
+---
+name: antislop-responsive
+description: Mobile layout skill for antislop. Use for layouts that reflow on small screens: grids, overflow, tap targets.
+whenToUse: "Load with the core 'antislop' skill."
+---
 
 > Part of the antislop system. Read together with `antislop.md` (core). Load this skill ONLY for layouts that must hold up on small screens: breakpoints, overflow, grids, tap targets, nav.
 

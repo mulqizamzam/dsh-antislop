@@ -1,37 +1,32 @@
 {
   "name": "antislop",
-  "version": "1.0.0",
-  "description": "Anti-slop filter for AI coding agents: stop generic UI, copy, and code comments. Load as a filter, audit before shipping.",
-  "bin": {
-    "antislop": "bin/antislop.js"
-  },
-  "files": [
-    "antislop.md",
-    "skills",
-    "bin",
-    "install",
-    "plugins",
-    "scripts",
-    "audit",
-    "README.md",
-    "LICENSE"
-  ],
+  "version": "2.0.0",
+  "description": "Anti-slop filter for AI coding agents, as a DSH skill plugin. Stops generic UI, copy, and code comments.",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
   "keywords": [
-    "ai",
-    "slop",
+    "deepseek-harness",
+    "dsh-plugin",
+    "anti-slop",
+    "skill",
     "filter",
     "ui",
     "copywriting",
-    "code-comments",
-    "anti-slop",
-    "llm",
-    "agents"
+    "code-comments"
   ],
-  "license": "MIT",
-  "engines": {
-    "node": ">=14"
-  },
-  "scripts": {
-    "audit": "node bin/antislop.js audit ."
+  "files": [
+    "skills",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "engines": {
+      "dsh": ">=0.2.0-rc.2"
+    }
   }
 }

@@ -1,0 +1,30 @@
+# antislop — DSH skill plugin patch
+#
+# Registers an isolated dsh-skill-filesystem provider (providerName: "antislop")
+# that scans only the skills/ directory inside this plugin. includeDefaultRoots
+# is false so no project/user roots leak into this provider's catalog.
+#
+# Skill layout:
+#   skills/core/SKILL.md        → name: antislop              (core filter)
+#   skills/ui/SKILL.md          → name: antislop-ui           (visual/interface)
+#   skills/copywriting/SKILL.md → name: antislop-copywriting  (prose/CTAs)
+#   skills/human/SKILL.md       → name: antislop-human        (a11y/contrast/keyboard)
+#   skills/responsive/SKILL.md  → name: antislop-responsive   (mobile breakpoints)
+#   skills/code-comments/SKILL.md → name: antislop-code-comments (comment hygiene)
+#
+# Each SKILL.md carries YAML frontmatter (name, description, whenToUse) so
+# dsh-skill-filesystem can parse it as a discoverable skill entry.
+#
+# Load order in the session:
+#   1. This plugin injects the provider at CUSTOM_RANK (300).
+#   2. The agent reads the core skill (antislop) on every session start.
+#   3. Per-task, the matching subskill loads (ui / copywriting / human / responsive / code-comments).
+- insert:
+    - id: antislop-skills
+      name: '@deepseek-ai/dsh-skill-filesystem'
+      config:
+        providerName: antislop
+        includeDefaultRoots: false
+        customSkillDirs:
+          - /home/administrator/agent-workspace/dsh-custom/plugins/antislop/skills
+        watch: false

@@ -21,15 +21,15 @@ unique and have its own character?   →   If no, it's too generic.
 | File | What it is |
 |---|---|
 | `antislop.md` | **The core filter.** One readable file: the rules, the slop-pattern catalog, the liveliness toolkit, and the Delivery Gate (audit). Read this first. |
-| `skills/ui.md` | UI / visual depth: color, layout, components, decoration, motion. |
-| `skills/copywriting.md` | Copy depth: headlines, CTAs, tone, anti-AI-writing patterns. |
-| `skills/human.md` | Human-centered depth: contrast, keyboard, focus, states. |
-| `skills/responsive.md` | Responsive depth: breakpoints, overflow, grids, tap targets. |
-| `skills/code-comments.md` | Code-comment hygiene: drop the slop, keep the useful, never touch the code. |
+| `skills/ui/SKILL.md` | UI / visual depth: color, layout, components, decoration, motion. |
+| `skills/copywriting/SKILL.md` | Copy depth: headlines, CTAs, tone, anti-AI-writing patterns. |
+| `skills/human/SKILL.md` | Human-centered depth: contrast, keyboard, focus, states. |
+| `skills/responsive/SKILL.md` | Responsive depth: breakpoints, overflow, grids, tap targets. |
+| `skills/code-comments/SKILL.md` | Code-comment hygiene: drop the slop, keep the useful, never touch the code. |
 | `bin/antislop.js` | The CLI: `init`, `install`, and the `audit` pass/fail mode. |
 | `install/install.sh` · `install/install.ps1` | Simple installer flow for every common agent. |
 | `plugins/` | Drop-in "plugin style" setups for Claude Code, Cursor, Cline, Windsurf, Aider, Codex, OpenCode, Continue. |
-| `scripts/contrast-check.py` | WCAG contrast verifier (used by `skills/human.md`). |
+| `scripts/contrast-check.py` | WCAG contrast verifier (used by `skills/human/SKILL.md`). |
 | `audit/audit-prompt.md` | LLM-driven audit prompt for finished work. |
 
 ---
@@ -81,11 +81,11 @@ antislop keeps the core small and breaks depth into skills you load per task:
 
 | Load when… | File | Core rules it leans on |
 |---|---|---|
-| building/editing any interface | `skills/ui.md` | R-16–R-27, R-32, R-34, R-35 |
-| writing/editing prose, CTAs, headlines | `skills/copywriting.md` | R-02, R-30, R-31, R-01 |
-| accessibility / real people | `skills/human.md` | R-06, R-08, R-09, R-11 |
-| small-screen layouts | `skills/responsive.md` | R-03, R-28 |
-| writing/editing code comments | `skills/code-comments.md` | R-15 |
+| building/editing any interface | `skills/ui/SKILL.md` | R-16–R-27, R-32, R-34, R-35 |
+| writing/editing prose, CTAs, headlines | `skills/copywriting/SKILL.md` | R-02, R-30, R-31, R-01 |
+| accessibility / real people | `skills/human/SKILL.md` | R-06, R-08, R-09, R-11 |
+| small-screen layouts | `skills/responsive/SKILL.md` | R-03, R-28 |
+| writing/editing code comments | `skills/code-comments/SKILL.md` | R-15 |
 
 Each skill uses the same shape — **Tell / Why / Fix** — and ends with a checklist
 to run alongside the core's Delivery Gate. None of them renumber or duplicate the

@@ -2,11 +2,11 @@
 ## antislop
 
 For UI, copy, human-centered details, responsive layout, or code comments work, read `antislop.md` (core) and then the skill for the task:
-- UI / visual: `skills/ui.md`
-- Copy & text: `skills/copywriting.md`
-- Human-centered / a11y: `skills/human.md`
-- Responsive / mobile: `skills/responsive.md`
-- Code comments: `skills/code-comments.md`
+- UI / visual: `skills/ui/SKILL.md`
+- Copy & text: `skills/copywriting/SKILL.md`
+- Human-centered / a11y: `skills/human/SKILL.md`
+- Responsive / mobile: `skills/responsive/SKILL.md`
+- Code comments: `skills/code-comments/SKILL.md`
 
 Before starting, ask the user when antislop applies: during the work, or after it is done.
 <!-- antislop:end -->

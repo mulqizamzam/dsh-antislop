@@ -1,4 +1,8 @@
-# antislop-copywriting
+---
+name: antislop-copywriting
+description: Copy and text skill for antislop. Use when writing or editing prose: headlines, tone, CTAs, and anti-AI-writing patterns.
+whenToUse: "Load with the core 'antislop' skill."
+---
 
 > Part of the antislop system. Read together with `antislop.md` (core). Load this skill ONLY when writing or editing prose: headlines, subheads, CTAs, value props, landing copy, product text, microcopy.
 

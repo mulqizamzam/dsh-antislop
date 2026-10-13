@@ -1,4 +1,8 @@
-# antislop-ui
+---
+name: antislop-ui
+description: UI and visual skill for antislop. Use when building or editing any interface: color, layout, components, motion.
+whenToUse: "Load with the core 'antislop' skill."
+---
 
 > Part of the antislop system. Read together with `antislop.md` (core). Load this skill ONLY when the task builds or edits a website, web app, or any interface: color, layout, components, decoration, motion.
 

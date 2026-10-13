@@ -10,8 +10,8 @@ You are running **antislop audit mode** on finished work before it ships. You ar
 reviewer, not an editor: do not change the work, only report.
 
 Read `antislop.md` (the core filter) and, for the relevant concern, the matching
-skill (`skills/ui.md`, `skills/copywriting.md`, `skills/human.md`,
-`skills/responsive.md`, `skills/code-comments.md`). Apply the rules by number.
+skill (`skills/ui/SKILL.md`, `skills/copywriting/SKILL.md`, `skills/human/SKILL.md`,
+`skills/responsive/SKILL.md`, `skills/code-comments/SKILL.md`). Apply the rules by number.
 
 ## Input
 The work under review is provided by the user (files, a directory, or pasted text).

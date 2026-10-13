@@ -38,11 +38,11 @@ If the answer is **no**, it is too generic. Start over.
 - `AGENTS.md` / `CLAUDE.md` / `GEMINI.md` (etc.) **routes** the agent: "for UI/copy/people/mobile/comments work, read `antislop.md` as the filter, then the matching skill."
 - `antislop.md` rejects slop and requires liveliness. It does **not** invent direction.
 - The five skills add concern-specific depth and are loaded **only when needed**:
-  - `skills/ui.md`, color, layout, components, decoration, motion
-  - `skills/copywriting.md`, headlines, CTAs, tone, anti-AI-writing patterns
-  - `skills/human.md`, contrast, keyboard, focus, states for real people
-  - `skills/responsive.md`, layouts that hold up on small screens
-  - `skills/code-comments.md`, keep useful comments, drop the slop
+  - `skills/ui/SKILL.md`, color, layout, components, decoration, motion
+  - `skills/copywriting/SKILL.md`, headlines, CTAs, tone, anti-AI-writing patterns
+  - `skills/human/SKILL.md`, contrast, keyboard, focus, states for real people
+  - `skills/responsive/SKILL.md`, layouts that hold up on small screens
+  - `skills/code-comments/SKILL.md`, keep useful comments, drop the slop
 
 ---
 
@@ -424,6 +424,6 @@ Fix it, re-run the gate, then ship. Delivery without a clean gate is a failure.
 - The installer writes a small **pointer block** into your agent's entry file
   (`CLAUDE.md`, `AGENTS.md`, `.cursor/rules`, `.clinerules`, `.windsurfrules`, etc.)
   so antislop loads every session, and copies the core + the skills you choose.
-- Load only the skill a task needs: UI work → `skills/ui.md`; copy →
-  `skills/copywriting.md`; accessibility → `skills/human.md`; mobile →
-  `skills/responsive.md`; comments → `skills/code-comments.md`.
+- Load only the skill a task needs: UI work → `skills/ui/SKILL.md`; copy →
+  `skills/copywriting/SKILL.md`; accessibility → `skills/human/SKILL.md`; mobile →
+  `skills/responsive/SKILL.md`; comments → `skills/code-comments/SKILL.md`.

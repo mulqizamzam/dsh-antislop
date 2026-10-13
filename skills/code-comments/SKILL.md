@@ -1,4 +1,8 @@
-# antislop-code-comments
+---
+name: antislop-code-comments
+description: Code comment hygiene for AI coding agents: remove generic AI-slop comments, keep the valuable ones, never touch the code.
+whenToUse: "Load with the core 'antislop' skill."
+---
 
 > Part of the antislop system. Read together with `antislop.md` (core). Load this skill ONLY when writing or editing code comments. It filters slop comments and keeps useful ones. It changes comments only, never the code.
 

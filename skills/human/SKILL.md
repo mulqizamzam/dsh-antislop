@@ -1,4 +1,8 @@
-# antislop-human
+---
+name: antislop-human
+description: Human and accessibility skill for antislop. Contrast, keyboard, focus, and states for real people.
+whenToUse: "Load with the core 'antislop' skill."
+---
 
 > Part of the antislop system. Read together with `antislop.md` (core). Load this skill ONLY when making sure a UI works for real people: contrast, keyboard, focus, states, motion-safety.
 
