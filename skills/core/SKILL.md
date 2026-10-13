@@ -15,7 +15,7 @@ whenToUse: "UI work, copy/text, accessibility, responsive layout, code comments 
 
 ## What this is (and isn't)
 
-`antislop.md` is a **filter**. It stops AI coding agents from producing generic,
+`antislop` is a **filter** (this file). It stops AI coding agents from producing generic,
 recognizable "AI slop", while avoiding the opposite failure: a sterile, lifeless
 default.
 
@@ -39,8 +39,8 @@ If the answer is **no**, it is too generic. Start over.
 ### How the pieces fit
 
 - `DESIGN.md` (or your brand/style direction) gives the work its **soul**: identity, personality, palette, type, mood.
-- `AGENTS.md` / `CLAUDE.md` / `GEMINI.md` (etc.) **routes** the agent: "for UI/copy/people/mobile/comments work, read `antislop.md` as the filter, then the matching skill."
-- `antislop.md` rejects slop and requires liveliness. It does **not** invent direction.
+- The host agent's entry file (`AGENTS.md`, `CLAUDE.md`) **routes** the agent: "for UI/copy/people/mobile/comments work, read the `antislop` skill, then the matching skill."
+- This filter rejects slop and requires liveliness. It does **not** invent direction.
 - The five skills add concern-specific depth and are loaded **only when needed**:
   - `skills/ui/SKILL.md`, color, layout, components, decoration, motion
   - `skills/copywriting/SKILL.md`, headlines, CTAs, tone, anti-AI-writing patterns
@@ -161,7 +161,7 @@ require a written reason, **Quality Locks** are consistency requirements.
 #### R-02 — No em dash
 - **FORBIDDEN:** the em dash character (`—`) in any text your agent generates for a product: UI strings, marketing/landing copy, or code-comment prose.
 - Use comma, period, colon, or parentheses instead. Text must feel natural and human.
-- *Scope:* this rule targets the text your agent **produces** for a product, not antislop's own documentation. The `antislop.md` headings, the example above, the `skills/*.md` files, `audit/`, `README.md`, and the installers are the filter itself, so they are exempt (a linter does not lint itself), and `antislop audit` already excludes them. The em dashes you see in those docs are structural separators, not product copy.
+- *Scope:* this rule targets the text your agent **produces** for a product, not antislop's own documentation. The `skills/*/SKILL.md` headings, the examples in those files, `audit/`, and `README.md` are the filter itself, so they are exempt (a linter does not lint itself). The em dashes you see in those docs are structural separators, not product copy.
 
 #### R-03 — Mobile must be flawless
 - **REQUIRED:** no horizontal overflow; text stays in its container; cards don't collide or clip.
@@ -356,8 +356,7 @@ every PASS backed by concrete evidence (e.g. "R-07 PASS: every button has a real
 Signup → /signup, empty form → validation, mobile menu → opens/closes, no console
 errors"). A report containing a FAIL must never ship; fix, then re-run.
 
-Also see `audit/audit-prompt.md` for an LLM-driven review pass, and the `antislop audit`
-CLI for a fast static check (`npx antislop audit <path>`).
+Also see `audit/audit-prompt.md` for an LLM-driven review pass.
 
 ### Block 1 — Hard Gate (all answers must be NO)
 - [ ] em dash anywhere in text, outside the R-02 carve-out? *(R-02)*
@@ -421,13 +420,11 @@ Fix it, re-run the gate, then ship. Delivery without a clean gate is a failure.
 
 ---
 
-## Install & load
+## Load order
 
-- First-time users: read `README.md`.
-- Quick install: `npx antislop init` (interactive) or `./install/install.sh`.
-- The installer writes a small **pointer block** into your agent's entry file
-  (`CLAUDE.md`, `AGENTS.md`, `.cursor/rules`, `.clinerules`, `.windsurfrules`, etc.)
-  so antislop loads every session, and copies the core + the skills you choose.
+- First-time setup: read `README.md`.
+- The host agent's entry file (`AGENTS.md`) carries a pointer block between
+  `<!-- antislop:start -->` and `<!-- antislop:end -->` so this skill loads every session.
 - Load only the skill a task needs: UI work → `skills/ui/SKILL.md`; copy →
   `skills/copywriting/SKILL.md`; accessibility → `skills/human/SKILL.md`; mobile →
   `skills/responsive/SKILL.md`; comments → `skills/code-comments/SKILL.md`.

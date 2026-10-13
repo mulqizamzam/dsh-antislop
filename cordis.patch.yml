@@ -26,5 +26,11 @@
         providerName: antislop
         includeDefaultRoots: false
         customSkillDirs:
-          - /home/administrator/agent-workspace/dsh-custom/plugins/antislop/skills
+          # EDIT THIS. Replace the path below with the absolute path to the
+          # skills directory of your clone. dsh-skill-filesystem resolves this
+          # value with resolve(), so a relative path lands against the DSH
+          # process working directory and is not reliable. A wrong value fails
+          # silently: the root contributes no candidates and the skills simply
+          # do not appear.
+          - /absolute/path/to/dsh-antislop/skills
         watch: false

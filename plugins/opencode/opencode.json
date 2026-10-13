@@ -1,7 +1,0 @@
-{
-  "agents": {
-    "default": {
-      "prompt": "Read antislop.md and the matching skills/ file before UI, copy, human, responsive, or code-comment work. Run the Delivery Gate before shipping."
-    }
-  }
-}

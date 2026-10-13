@@ -4,11 +4,11 @@ description: Human and accessibility skill for antislop. Contrast, keyboard, foc
 whenToUse: "Load with the core 'antislop' skill."
 ---
 
-> Part of the antislop system. Read together with `antislop.md` (core). Load this skill ONLY when making sure a UI works for real people: contrast, keyboard, focus, states, motion-safety.
+> Part of the antislop system. Read together with `skills/core/SKILL.md` (core). Load this skill ONLY when making sure a UI works for real people: contrast, keyboard, focus, states, motion-safety.
 
 ## How to use this skill
 
-This skill is a supplement to the core Delivery Gate in `antislop.md`, not a replacement for it. The core file sets the hard gates; this skill tells you what "works for real people" actually looks like so you can pass them. Pull it in when a task touches anything a human will see or operate: a page, a form, a modal, a theme toggle, an error message, even a loading spinner.
+This skill is a supplement to the core Delivery Gate in `skills/core/SKILL.md`, not a replacement for it. The core file sets the hard gates; this skill tells you what "works for real people" actually looks like so you can pass them. Pull it in when a task touches anything a human will see or operate: a page, a form, a modal, a theme toggle, an error message, even a loading spinner.
 
 The gates this skill defends, by number:
 

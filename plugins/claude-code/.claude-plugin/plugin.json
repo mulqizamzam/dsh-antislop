@@ -1,6 +1,0 @@
-{
-  "name": "antislop",
-  "version": "1.0.0",
-  "description": "Anti-slop filter for AI coding agents: load every session, audit before shipping.",
-  "commands": ["antislop-audit"]
-}

@@ -4,11 +4,11 @@ description: Code comment hygiene for AI coding agents: remove generic AI-slop c
 whenToUse: "Load with the core 'antislop' skill."
 ---
 
-> Part of the antislop system. Read together with `antislop.md` (core). Load this skill ONLY when writing or editing code comments. It filters slop comments and keeps useful ones. It changes comments only, never the code.
+> Part of the antislop system. Read together with `skills/core/SKILL.md` (core). Load this skill ONLY when writing or editing code comments. It filters slop comments and keeps useful ones. It changes comments only, never the code.
 
 ## How to use this skill
 
-This skill supplements the core Delivery Gate. Load it whenever you are about to write, edit, review, or prune code comments. Keep `antislop.md` open beside it; this file is a focused extension, not a replacement.
+This skill supplements the core Delivery Gate. Load it whenever you are about to write, edit, review, or prune code comments. Keep `skills/core/SKILL.md` open beside it; this file is a focused extension, not a replacement.
 
 The single most important rule is the SCOPE GUARDRAIL from R-15:
 

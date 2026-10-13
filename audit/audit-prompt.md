@@ -1,15 +1,14 @@
 # antislop audit prompt
 
 Use this prompt to run the **audit mode** of antislop against finished work with an
-LLM (instead of, or in addition to, the `antislop audit` CLI static check). Paste
-the prompt and the work into your agent.
+LLM. Paste the prompt and the work into your agent.
 
 ---
 
 You are running **antislop audit mode** on finished work before it ships. You are a
 reviewer, not an editor: do not change the work, only report.
 
-Read `antislop.md` (the core filter) and, for the relevant concern, the matching
+Read `skills/core/SKILL.md` (the core filter) and, for the relevant concern, the matching
 skill (`skills/ui/SKILL.md`, `skills/copywriting/SKILL.md`, `skills/human/SKILL.md`,
 `skills/responsive/SKILL.md`, `skills/code-comments/SKILL.md`). Apply the rules by number.
 

@@ -4,11 +4,11 @@ description: Mobile layout skill for antislop. Use for layouts that reflow on sm
 whenToUse: "Load with the core 'antislop' skill."
 ---
 
-> Part of the antislop system. Read together with `antislop.md` (core). Load this skill ONLY for layouts that must hold up on small screens: breakpoints, overflow, grids, tap targets, nav.
+> Part of the antislop system. Read together with `skills/core/SKILL.md` (core). Load this skill ONLY for layouts that must hold up on small screens: breakpoints, overflow, grids, tap targets, nav.
 
 ## How to use this skill
 
-This skill is a supplement, not a replacement. The hard gates in `antislop.md` still decide whether your work ships. Load this skill the moment a task touches anything that renders on a phone: a page, a card grid, a navbar, a form, a modal. It exists to stop the specific kind of slop that only appears at 360px and never in a desktop preview.
+This skill is a supplement, not a replacement. The hard gates in `skills/core/SKILL.md` still decide whether your work ships. Load this skill the moment a task touches anything that renders on a phone: a page, a card grid, a navbar, a form, a modal. It exists to stop the specific kind of slop that only appears at 360px and never in a desktop preview.
 
 Cite the gates that apply:
 

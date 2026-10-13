@@ -4,17 +4,17 @@ description: UI and visual skill for antislop. Use when building or editing any 
 whenToUse: "Load with the core 'antislop' skill."
 ---
 
-> Part of the antislop system. Read together with `antislop.md` (core). Load this skill ONLY when the task builds or edits a website, web app, or any interface: color, layout, components, decoration, motion.
+> Part of the antislop system. Read together with `skills/core/SKILL.md` (core). Load this skill ONLY when the task builds or edits a website, web app, or any interface: color, layout, components, decoration, motion.
 
 ---
 
 ## How to use this skill
 
-This file is a **supplement**, not a replacement. The core `antislop.md` owns the Delivery Gate (R-12) and the rule numbering. You do not re-issue or re-number those rules here — you cite them and give the UI-specific shape of each violation.
+This file is a **supplement**, not a replacement. The core `skills/core/SKILL.md` owns the Delivery Gate (R-12) and the rule numbering. You do not re-issue or re-number those rules here — you cite them and give the UI-specific shape of each violation.
 
 Load order:
 
-1. Read the core (`antislop.md`) first. It sets the dials (ENERGY 1–3, RHYTHM 1–3, MOTION 1–3), the purpose test ("what does this serve?"), and the liveliness levers (one focal point, hierarchical contrast, whitespace as structure, one deliberate accent, identity motif).
+1. Read the core (`skills/core/SKILL.md`) first. It sets the dials (ENERGY 1–3, RHYTHM 1–3, MOTION 1–3), the purpose test ("what does this serve?"), and the liveliness levers (one focal point, hierarchical contrast, whitespace as structure, one deliberate accent, identity motif).
 2. Load this skill when the task touches anything visual: palette, layout, components, decoration, animation.
 3. Before delivery, run the **UI Skill Checklist** at the bottom *alongside* the core Delivery Gate (R-12). Both must pass.
 

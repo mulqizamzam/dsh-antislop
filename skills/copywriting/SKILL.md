@@ -4,11 +4,11 @@ description: Copy and text skill for antislop. Use when writing or editing prose
 whenToUse: "Load with the core 'antislop' skill."
 ---
 
-> Part of the antislop system. Read together with `antislop.md` (core). Load this skill ONLY when writing or editing prose: headlines, subheads, CTAs, value props, landing copy, product text, microcopy.
+> Part of the antislop system. Read together with `skills/core/SKILL.md` (core). Load this skill ONLY when writing or editing prose: headlines, subheads, CTAs, value props, landing copy, product text, microcopy.
 
 ## How to use this skill
 
-This skill is a supplement to the core Delivery Gate in `antislop.md`, not a replacement for it. The core file owns the rule numbers and the gate. This skill only adds copy-specific guidance and shows the shape of good and bad prose under each rule. Cite rules by their canonical ID and never renumber them here.
+This skill is a supplement to the core Delivery Gate in `skills/core/SKILL.md`, not a replacement for it. The core file owns the rule numbers and the gate. This skill only adds copy-specific guidance and shows the shape of good and bad prose under each rule. Cite rules by their canonical ID and never renumber them here.
 
 Load this skill before you write or edit any string a human will read: the hero headline, the CTA button, the empty-state message, the FAQ, the testimonial block, the pricing line. If you are only touching code or layout, the core file and the other antislop skills cover you and this one stays unloaded.
 
