@@ -1,6 +1,6 @@
 ---
 name: antislop-ui
-description: UI and visual skill for antislop. Use when building or editing any interface: color, layout, components, motion.
+description: "UI and visual skill for antislop. Use when building or editing any interface: color, layout, components, motion."
 whenToUse: "Load with the core 'antislop' skill."
 ---
 

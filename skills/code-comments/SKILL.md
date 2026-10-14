@@ -1,6 +1,6 @@
 ---
 name: antislop-code-comments
-description: Code comment hygiene for AI coding agents: remove generic AI-slop comments, keep the valuable ones, never touch the code.
+description: "Code comment hygiene for AI coding agents: remove generic AI-slop comments, keep the valuable ones, never touch the code."
 whenToUse: "Load with the core 'antislop' skill."
 ---
 

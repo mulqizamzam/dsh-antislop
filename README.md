@@ -103,7 +103,7 @@ The plugin has one configuration surface: a Cordis `insert` row that mounts an i
 
 Two settings need attention:
 
-- **`customSkillDirs` must be edited per machine.** The value in this repo's `cordis.patch.yml` is the placeholder `/absolute/path/to/dsh-antislop/skills`. Replace it with your clone's absolute path. The provider resolves this value with `resolve()`, so a relative path lands against the DSH process working directory and is not reliable.
+- **`customSkillDirs` is machine-specific.** This repo's `cordis.patch.yml` carries this machine's absolute path (`/home/administrator/agent-workspace/dsh-custom/plugins/antislop/skills`). On another machine, or after moving the clone, change it there: the provider resolves the value with `resolve()`, so a relative path lands against the DSH process working directory and is not reliable, and a wrong path fails silently with no skills in the catalog.
 - **`watch: false`** means no live reload. Editing `skills/core/SKILL.md` changes nothing until DSH restarts. Set `watch: true` if you are actively editing the skills and want changes picked up automatically.
 
 No environment variables, `.env` file, or secret is used anywhere in this plugin.

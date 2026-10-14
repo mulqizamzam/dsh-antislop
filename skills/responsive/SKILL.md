@@ -1,6 +1,6 @@
 ---
 name: antislop-responsive
-description: Mobile layout skill for antislop. Use for layouts that reflow on small screens: grids, overflow, tap targets.
+description: "Mobile layout skill for antislop. Use for layouts that reflow on small screens: grids, overflow, tap targets."
 whenToUse: "Load with the core 'antislop' skill."
 ---
 
