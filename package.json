@@ -21,12 +21,12 @@
     "README.md",
     "LICENSE"
   ],
+  "peerDependencies": {
+    "@deepseek-ai/dsh": ">=0.2.0-rc.2"
+  },
   "dsh": {
     "bundle": {
       "patch": "./cordis.patch.yml"
-    },
-    "engines": {
-      "dsh": ">=0.2.0-rc.2"
     }
   }
 }

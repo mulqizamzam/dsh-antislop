@@ -41,7 +41,7 @@ There is no CLI, no npm package, and no installer. Those existed in the 1.x line
 
 | Tool | Required version | How to check | Source |
 |---|---|---|---|
-| DeepSeek Harness | `>=0.2.0-rc.2` | `dsh --version` | `package.json` field `dsh.engines.dsh` |
+| DeepSeek Harness | `>=0.2.0-rc.2` | `dsh --version` | `package.json` field `peerDependencies["@deepseek-ai/dsh"]` — the field the install-time compatibility gate reads |
 | Node.js | Perlu dikonfirmasi | `node --version` | `package.json` has no `engines` field. Node 24.19.0 was used to validate the YAML during the rewrite of this README. |
 | Python 3 | Perlu dikonfirmasi | `python3 --version` | `scripts/contrast-check.py` shebang is `#!/usr/bin/env python3` |
 
